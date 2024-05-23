@@ -4,4 +4,60 @@
 	button {
 		font-weight: bold;
 	}
-}
+
+	.trapezoid {
+		border-bottom: 150px solid #ad1515;
+		border-left: 125px solid transparent;
+		border-right: 125px solid transparent;
+		position:relative;
+		height: 400;
+		width: 10vw;
+		margin: 8% auto;
+	}
+	.square{
+		height:20vw;
+		width:20vw;
+		position:absolute;
+		left:40%;
+		bottom: 30%;
+		margin: auto;
+		background-color:yellowgreen;
+	}
+	.door{
+		width:6vw;
+		height:11vw;
+		border:black;
+		position:absolute;
+		background-color: violet;
+		left:47%;
+		margin:auto;
+		animation-name: example;
+       animation-duration: 5s;
+	}
+	.windowLeft{
+		width:4vw;
+		height:4vw;
+		position:absolute;
+		background-color: blueviolet;
+		left:41.5%;
+		margin:auto;
+		animation-name: example;
+       animation-duration: 5s;
+	}
+	.windowRight{
+		width:4vw;
+		height:4vw;
+		position:absolute;
+		background-color: blueviolet;
+		right:41.5%;
+		margin:auto;
+		animation-name: example;
+       animation-duration: 5s;
+	}
+	@keyframes example {
+		0%   {background-color: red;}
+		25%  {background-color: yellow;}
+		50%  {background-color: blue;}
+		100% {background-color: green;}
+	  }
+	};
